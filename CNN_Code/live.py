@@ -76,7 +76,7 @@ criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters())
 
 model = CNNModel(num_classes=6)
-model.load_state_dict(torch.load("Code/cnn_model.pth"))
+model.load_state_dict(torch.load("CNN_Code/cnn_model.pth"))
 model.to(device)
 model.eval()
 
@@ -90,6 +90,7 @@ transform = transforms.Compose([
 
 cap = cv2.VideoCapture(0)
 
+print("work")
 while True:
     ret, frame = cap.read()
     if not ret:
