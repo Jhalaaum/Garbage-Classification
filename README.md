@@ -1,5 +1,7 @@
 # Waste Classification
 
+This is a waste classification model made by Aum in his free time. 
+
 ## Overview
 
 This project focuses on classifying waste into six categories: Cardboard, Plastic, Trash, Glass, Metal, and Paper using multiple approaches:
