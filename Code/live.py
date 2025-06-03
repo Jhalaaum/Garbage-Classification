@@ -90,7 +90,9 @@ transform = transforms.Compose([
 
 cap = cv2.VideoCapture(0)
 
+print("WORKS")
 while True:
+    print("WORKS")
     ret, frame = cap.read()
     if not ret:
         break
