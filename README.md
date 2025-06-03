@@ -1,5 +1,5 @@
 # CNN
-Trash Detection using CNNs
+Trash Detection using different methods - CNNs, Transfer Learning and Pretrained_Weights
 
 # Citations
 Dataset and CNN code adapted from TrashNet by Gary Thung and Mindy Yang. Please cite the original repository if used.
