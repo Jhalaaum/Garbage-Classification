@@ -36,6 +36,20 @@ Used YOLOv8 for real-time object detection of waste in varied environments.
 Trained on the TACO Dataset for diverse annotations and realistic scenarios.
 Code and inference examples available in pretrainedlive.py.
 
+4. Roboflow dataset - 
+
+        waste-classifier-louut_dataset,
+        title = { Waste Classifier Dataset },
+        type = { Open Source Dataset },
+        author = { Classification },
+        howpublished = { \url{ https://universe.roboflow.com/classification-vu3ol/waste-classifier-louut } },
+        url = { https://universe.roboflow.com/classification-vu3ol/waste-classifier-louut },
+        journal = { Roboflow Universe },
+        publisher = { Roboflow },
+        year = { 2024 },
+        month = { apr },
+        note = { visited on 2025-06-03 }
+
 ## Collaborators
 
 1. Aum
