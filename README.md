@@ -14,6 +14,8 @@ This project focuses on classifying waste into six categories: Cardboard, Plasti
 
 4. Transfer learning from Roboflow
 
+I have also implemented live realtime detection for each of these methods.
+
 ## Datasets
 
 There are 2 datasets - from Trashnet and Roboflow.
