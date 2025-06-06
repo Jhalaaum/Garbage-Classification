@@ -19,12 +19,12 @@ model.fc = nn.Sequential(
     nn.Linear(128, len(class_names))
 )
 
-model.load_state_dict(torch.load("Transfer_learning/waste_classifier_resnet18.pth", map_location=device))
+model.load_state_dict(torch.load("Transfer_learning/best_waste_classifier_resnet18.pth", map_location=device))
 model.to(device)
 model.eval()
 
 transform = transforms.Compose([
-    transforms.Resize((224, 224)),
+    transforms.Resize((128, 128)),
     transforms.ToTensor(),
     transforms.Normalize(mean=[0.485, 0.456, 0.406],
                          std=[0.229, 0.224, 0.225])
@@ -36,13 +36,10 @@ if not cap.isOpened():
     print("Cannot open webcam")
     exit()
 
+print("WORKS")
 while True:
     ret, frame = cap.read()
-    if not ret:
-        print("Failed to grab frame")
-        break
-
-    image = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+    image = frame
     image = Image.fromarray(image)
 
     input_tensor = transform(image).unsqueeze(0).to(device)
