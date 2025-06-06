@@ -12,6 +12,8 @@ This project focuses on classifying waste into six categories: Cardboard, Plasti
 
 3. Object Detection using YOLOv8
 
+4. Transfer learning from Roboflow
+
 ## Datasets
 
 There are 2 datasets - from Trashnet and Roboflow.
@@ -33,6 +35,10 @@ See transfer_learning.ipynb for implementation details.
 Used YOLOv8 for real-time object detection of waste in varied environments.
 Trained on the TACO Dataset for diverse annotations and realistic scenarios.
 Code and inference examples available in pretrainedlive.py.
+
+4. Transfer learning from Roboflow - 
+used an online roboflow model(same as one used for dataset)
+Code found in roboflow.py
 
 ## Collaborators
 
