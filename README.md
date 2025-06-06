@@ -12,11 +12,11 @@ This project focuses on classifying waste into six categories: Cardboard, Plasti
 
 3. Object Detection using YOLOv8
 
-### Datasets
+## Datasets
 
-There are 2 datasets
+There are 2 datasets - from Trashnet and Roboflow.
 
-### Methods
+## Methods
 
 1. Custom CNN - 
 A baseline CNN was implemented and trained from scratch using the TrashNet dataset.
@@ -26,7 +26,7 @@ Refer to model.ipynb for architecture and training process.
 2. Transfer Learning - 
 Leveraged ResNet18 (He et al., 2015) for feature extraction and fine-tuning.
 Enabled efficient training and strong performance even with limited data.
-See resnet.ipynb for implementation details.
+See transfer_learning.ipynb for implementation details.
 
 
 3. Object Detection (YOLOv8) - 
@@ -34,7 +34,18 @@ Used YOLOv8 for real-time object detection of waste in varied environments.
 Trained on the TACO Dataset for diverse annotations and realistic scenarios.
 Code and inference examples available in pretrainedlive.py.
 
-4. Roboflow dataset - 
+## Collaborators
+
+1. Aum
+
+## Citations
+Dataset and CNN code adapted from TrashNet by Gary Thung and Mindy Yang. Please cite the original repository if used.
+
+YOLOv8 detection trained on TACO: Trash Annotations in Context Dataset by Pedro Proença and Pedro Simões.
+
+Transfer learning implemented using ResNet18 (He et al., 2015).
+
+Roboflow dataset - 
 
         waste-classifier-louut_dataset,
         title = { Waste Classifier Dataset },
@@ -47,14 +58,3 @@ Code and inference examples available in pretrainedlive.py.
         year = { 2024 },
         month = { apr },
         note = { visited on 2025-06-03 }
-
-## Collaborators
-
-1. Aum
-
-### Citations
-Dataset and CNN code adapted from TrashNet by Gary Thung and Mindy Yang. Please cite the original repository if used.
-
-YOLOv8 detection trained on TACO: Trash Annotations in Context Dataset by Pedro Proença and Pedro Simões.
-
-Transfer learning implemented using MobileNet (Howard et al., 2017).
